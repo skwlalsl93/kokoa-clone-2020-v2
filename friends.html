@@ -1,39 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to KaKaoTalk</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="status-bar">
-        <div class="status-bar__column">
-            <span>No Service</span>
-            <i class="fas fa-wifi"></i>
-        </div>
-        <div class="status-bar__column">
-            14:26
-        </div>
-        <div class="status-bar__column">
-            <span>111%</span>
-            <i class="fas fa-battery-three-quarters fa-lg"></i>
-            <i class="fas fa-bolt"></i>
-        </div>
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        14:26
+      </div>
+      <div class="status-bar__column">
+        <span>111%</span>
+        <i class="fas fa-battery-three-quarters fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
     </div>
 
-    <nav>
-        <ul>
-            <li><a href="friends.html"><i class="fas fa-user fa-lg"></i></a></li>
-            <li><a href="#"><i class="far fa-comment fa-lg"></i></a></li>
-            <li><a href="#"><i class="fas fa-search fa-lg"></i></a></li>
-            <li><a href="#"><i class="fas fa-ellipsis-h fa-lg"></i></a></li>
-        </ul>
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icons">
+        <span class="fas fa-search fa-lg"></span>
+        <span class="fas fa-music fa-lg"></span>
+        <span class="fas fa-cog fa-lg"></span>
+      </div>
+    </header>
+
+    <a id="friends-display-link">
+        <i class="fas fa-info-circle"></i>
+            Friend's Names Display
+            <i class="fas fa-chevron-right fa-sm"></i>
+    </a>
+
+    <div class="user-component">
+        <div class="user-component__column">
+            <img src="#" class="user-component__avatar" />
+            <div class="user-component__text">
+                <h4 class="user-component__title">jimin kim</h4>
+            </div>
+        </div>
+        <div class="user-component__column"></div>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="fas fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#">
+            <span class="nav__notification">1</span>
+            <i class="far fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#"><i class="fas fa-search fa-2x"></i> </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#">
+            <span class="nav__update-dot"></span>
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+          </a>
+        </li>
+      </ul>
     </nav>
 
-    <script src="https://kit.fontawesome.com/8f9294d4ea.js" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/8f9294d4ea.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
