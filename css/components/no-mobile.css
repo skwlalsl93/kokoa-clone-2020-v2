@@ -1,0 +1,9 @@
+#no-mobile {
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100vw;
+    background-color: var(--yellow);
+    display: flex;
+    top: 0;
+}
